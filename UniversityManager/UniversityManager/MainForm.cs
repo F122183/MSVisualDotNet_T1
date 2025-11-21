@@ -1,3 +1,11 @@
+// Mario Nikolov
+// F122183
+// This is the main form for the University Manager application,
+// handling user interactions for adding, removing, and displaying people in the system.
+// It manages a list of Person objects, allowing users to add Students and Professors,
+// and provides filtering options to view all, only students, or only professors.
+// It also updates the status label to inform users about actions taken.
+
 using UniversityManager.Models;
 
 namespace UniversityManager
