@@ -99,6 +99,7 @@ namespace UniversityManager
         private void UpdateStatus(string message)
         {
             lblStatus.Text = message;
+            RevertDefaultStatusLabel();
         }
 
         private void rmvButton_Click(object sender, EventArgs e)
@@ -112,6 +113,7 @@ namespace UniversityManager
             else
             {
                 MessageBox.Show("Please select a person to remove.");
+                return;
             }
 
             ClearForm();
@@ -190,6 +192,18 @@ namespace UniversityManager
                 allSortButton.Checked = false;
                 studentsSortButton.Checked = false;
             }
+        }
+
+        private void RevertDefaultStatusLabel()
+        {
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            timer.Interval = 2000; // 2 seconds
+            timer.Tick += (s, e) =>
+            {
+                lblStatus.Text = string.Empty;
+            };
+            timer.Stop();
+            timer.Start();
         }
     }
 }

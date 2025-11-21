@@ -121,8 +121,7 @@
             // lblStatus
             // 
             lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(70, 17);
-            lblStatus.Text = "Label Status";
+            lblStatus.Size = new Size(0, 17);
             // 
             // lstPeople
             // 
