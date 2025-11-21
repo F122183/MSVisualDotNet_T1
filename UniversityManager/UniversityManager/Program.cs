@@ -1,3 +1,8 @@
+// Mario Nikolov
+// F122183
+// This is the main entry point for the University Manager application.
+// It initializes the application configuration and runs the main form.
+
 namespace UniversityManager
 {
     internal static class Program
