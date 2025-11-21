@@ -11,14 +11,14 @@ namespace UniversityManager.Models
     {
         public double Grade { get; set; }
 
+        public Student()
+        {
+            Role = "Student";
+        }
+
         public override string GetDetails()
         {
             return $"Student {Name} - Grade: {Grade}";
-        }
-
-        public string GetRoleInfo()
-        {
-            return $"Enrolled Student";
         }
     }
 }

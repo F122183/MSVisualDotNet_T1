@@ -10,6 +10,6 @@ namespace UniversityManager.Interfaces
         /// </summary>
         /// <returns>A string that provides information about the current role. The format and content of the string may vary
         /// depending on the implementation.</returns>
-        string GetRoleInfo();
+        string Role { get; set; }
     }
 }

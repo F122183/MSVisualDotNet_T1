@@ -11,14 +11,14 @@ namespace UniversityManager.Models
     {
         public string Department { get; set; }
 
+        public Professor()
+        {
+            Role = "Faculty Staff";
+        }
+
         public override string GetDetails()
         {
             return $"Professor {Name} - Dept: {Department}";
-        }
-
-        public string GetRoleInfo()
-        {
-            return $"Faculty Staff";
         }
     }
 }

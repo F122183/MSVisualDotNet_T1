@@ -201,7 +201,6 @@
             idLabel.Name = "idLabel";
             idLabel.Size = new Size(0, 15);
             idLabel.TabIndex = 2;
-            idLabel.Click += idLabel_Click;
             // 
             // nameLabel
             // 

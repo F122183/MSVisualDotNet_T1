@@ -121,11 +121,6 @@ namespace UniversityManager
             UpdateStatus("Removed selected person");
         }
 
-        private void idLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void roleComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
             if (roleComboBox.SelectedItem.ToString() == "Student")
